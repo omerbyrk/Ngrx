@@ -1,0 +1,9 @@
+<fieldset>
+  <legend>Tutorials</legend>
+  <ul>
+    <li *ngFor="let tutorial of tutorials | async; let i = index">
+      <a [href]="tutorial.url">{{tutorial.name}}</a>&nbsp;
+      <button (click)="remove(i)">-</button>
+    </li>
+  </ul>
+</fieldset>

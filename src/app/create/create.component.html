@@ -1,0 +1,22 @@
+<fieldset>
+  <legend>Create A Tutorial</legend>
+  <table>
+    <tr>
+      <td>Name: </td>
+      <td>
+        <input type="text" placeholder="Name" #name />
+      </td>
+    </tr>
+    <tr>
+      <td>Url: </td>
+      <td>
+        <input type="url" placeholder="Url" #url />
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <button style="float: right;" (click)="addTutorial(name.value, url.value)">Add The Tutorial</button>
+      </td>
+    </tr>
+  </table>
+</fieldset>
